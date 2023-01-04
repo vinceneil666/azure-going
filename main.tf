@@ -1,6 +1,6 @@
 #
 # Creates a resource group using the set basename.
-#Dillingsclone redigering av master
+#Dillingsclone redigering av masterss
 module "resgrp-01" {
   source = "./modules/regrp"
   location = var.location
