@@ -18,6 +18,10 @@ variable "pubip" {
   type = string
   default = "mylabenv"
 }
+variable "pubipid" {
+  type = string
+  default = "mylabenv"
+}
 variable "sub1-id-1" {
   type = string
   default = "mylabenv"

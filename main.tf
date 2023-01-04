@@ -37,3 +37,9 @@ module "nic" {
   subnetid = module.vnet-01.sub1-id-1
 }
 */
+module "linux-01"{
+  source = "./modules/vm/rockylinux"
+  location = var.location
+  name = var.basename
+  pubipid = module.public-ip-address-01.pubipid
+}
