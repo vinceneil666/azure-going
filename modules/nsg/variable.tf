@@ -10,15 +10,15 @@ variable "resgrpname" {
   type = string
   default = "something"
 }
-variable "mildcards" {
+variable "wildcards" {
   type = string
   default = "something"
 }
-variable "pubipid" {
-  type = string
-  default = "something"
+variable "pubip" {
+   type = string
+  default = "something" 
 }
-variable "frontsubid" {
-  type = string
-  default = "something"
+variable "nsgid" {
+   type = string
+  default = "something" 
 }

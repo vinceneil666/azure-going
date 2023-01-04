@@ -2,16 +2,17 @@ resource   "azurerm_linux_virtual_machine"   "myterraformvm"   {
   name                    =   var.name
   location                =   var.location
   resource_group_name     =   var.resgrpname
-  network_interface_ids   =   azurerm_network_interface.azurevm1nic.id
+  network_interface_ids   =   [azurerm_network_interface.azurevm1nic.id]
+  disable_password_authentication = "false"
   size                    =   "Standard_B1s"
   computer_name           =   "linuxvm"
   admin_username          =   "hiteshj"
-  admin_password          =   "securepassword!"
+  admin_password          =   "secur##21DSepassword!"
 
   source_image_reference   {
        publisher = "Canonical"
-       offer     = "UbuntuServer"
-       sku       = "20.04-LTS"
+       offer     = "0001-com-ubuntu-server-focal"
+       sku       = "20_04-lts-gen2"
        version   = "latest"
   }
 
@@ -27,7 +28,7 @@ resource   "azurerm_network_interface"   "azurevm1nic"   {
 
   ip_configuration   {
     name   =   "ipconfig1"
-    subnet_id   =   azurerm_subnet.frontendsubnet.id
+    subnet_id   =   var.frontsubid
     private_ip_address_allocation   =   "Dynamic"
     public_ip_address_id   =   var.pubipid
   }

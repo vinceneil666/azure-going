@@ -26,3 +26,8 @@ resource "random_id" "vnet" {
   }
   byte_length = 4
 }
+
+resource "azurerm_subnet_network_security_group_association" "example" {
+  subnet_id                 = azurerm_subnet.sub1.id
+  network_security_group_id = var.nsgid
+}
