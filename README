@@ -4,4 +4,4 @@ Credentials stored in files, specified in provider.tf
 
 Base name set in tfvars are merged into names of all objects. A random ID is added to enable te re-use of modules in main.tf 
 
-jepps
+update: adds a ubuntu server with public ip
