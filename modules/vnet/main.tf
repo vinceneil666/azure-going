@@ -20,14 +20,13 @@ resource "azurerm_subnet" "sub2" {
   virtual_network_name = azurerm_virtual_network.example.name
   address_prefixes     = ["10.0.2.0/24"]
 }
+resource "azurerm_subnet_network_security_group_association" "example" {
+  subnet_id                 = azurerm_subnet.sub1.id
+  network_security_group_id = var.nsgid
+}
 resource "random_id" "vnet" {
   keepers = {
     wildcards = var.mildcards
   }
   byte_length = 4
-}
-
-resource "azurerm_subnet_network_security_group_association" "example" {
-  subnet_id                 = azurerm_subnet.sub1.id
-  network_security_group_id = var.nsgid
 }
