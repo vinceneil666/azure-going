@@ -5,7 +5,16 @@ resource "azurerm_public_ip" "emc-eus2-corporate-nic-01-pip" {
   resource_group_name = var.resgrpname
   allocation_method   = "Static"
   sku = "Standard"
+  ip_tags                 = {
+        "RoutingPreference" = "Internet"
+    }
+  zones                   = [
+    "1",
+    "2",
+    "3",
+    ]
 }
+
 resource "random_id" "server" {
   keepers = {
     wildcards = var.wildcards

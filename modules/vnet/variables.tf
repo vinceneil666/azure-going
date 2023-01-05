@@ -14,3 +14,7 @@ variable "mildcards" {
   type = string
   default = "something"
 }
+variable "nsgid" {
+  type = string
+  default = "something"
+}

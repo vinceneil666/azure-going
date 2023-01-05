@@ -30,3 +30,7 @@ variable "wildcards" {
   type = string
   default = "mylabenv"
 }
+variable "nsgid" {
+   type = string
+  default = "something" 
+}
