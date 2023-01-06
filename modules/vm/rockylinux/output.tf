@@ -3,4 +3,5 @@ output "ubuntu-username" {
 }
 output "ubuntu-password" {
   value = azurerm_linux_virtual_machine.myterraformvm.admin_password
+  sensitive = true
 }
