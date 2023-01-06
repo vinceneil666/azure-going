@@ -1,19 +1,18 @@
 
 # README
 
-```
-Creates a resource group, vnet with two subnets and a public ip address.
-TFVARS files for DEV and PROD - apply with: terraform apply -var-file="./tfvars/prod(or dev).tfvars" -auto-approve 
-```
+Terraform code utilizing modules for creation of a vnet, two subnets, ubuntu server, public ip and a nsg. 
 
-```
-Credentials stored in files, specified in provider.tf 
-```
+Uses terraform.io for storage of statefile.
 
-```
-Base name set in tfvars are merged into names of all objects. A random ID is added to enable te re-use of modules in main.tf 
-```
+Variables needs to be added to terraform.io for:
 
-update: adds a ubuntu server with public ip
-
-Added terraform.io run and store of statefiles.
+  subscription_id = var.subscription_id   ## Azure specific
+  client_id       = var.client_id         ## Azure specific
+  client_secret   = var.client_secret     ## Azure specific
+  tenant_id       = var.tenant_id         ## Azure specific
+  organization = var.org                  ## Terraform.io organization
+  name = var.thename                      ## Terraform.io workspace
+  
+  var.basename is reused in all modules and added to the different names.
+  
