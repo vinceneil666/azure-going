@@ -33,7 +33,7 @@ jobs:
       
     - run: cat secret.tfvars
 
-    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
+    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API tokens
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
