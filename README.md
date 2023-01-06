@@ -15,3 +15,5 @@ Base name set in tfvars are merged into names of all objects. A random ID is add
 ```
 
 update: adds a ubuntu server with public ip
+
+Added terraform.io run and store of statefiles.
