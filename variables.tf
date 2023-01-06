@@ -34,3 +34,19 @@ variable "nsgid" {
    type = string
   default = "something" 
 }
+variable "subscription_id" {
+  type = string
+  default = "something" 
+}
+variable "client_id" {
+  type = string
+  default = "something" 
+}
+variable "client_secret" {
+  type = string
+  default = "something" 
+}
+variable "tenant_id" {
+  type = string
+  default = "something" 
+}
