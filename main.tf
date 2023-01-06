@@ -24,8 +24,6 @@ module "public-ip-address-01" {
   name = var.basename
   resgrpname = module.resgrp-01.resgrp-name
 }
-
-
 #
 # Creates a Linux server using the set basename, with public ip
 #
