@@ -19,4 +19,5 @@ output "user-ubuntu" {
 }
 output "passwd-ubuntu" {
   value = module.linux-01.ubuntu-password
+  sensitive = true
 }
