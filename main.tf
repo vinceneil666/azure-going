@@ -1,6 +1,5 @@
 #
 # Creates a resource group using the set basename.
-/*
 module "resgrp-01" {
   source = "./modules/regrp"
   location = var.location
@@ -47,4 +46,3 @@ module "nsg-01" {
   name = var.basename
   resgrpname = module.resgrp-01.resgrp-name
 }
-*/

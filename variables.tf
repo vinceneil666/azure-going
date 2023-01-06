@@ -50,3 +50,11 @@ variable "tenant_id" {
   type = string
   default = "something" 
 }
+variable "org" {
+  type = string
+  default = "something" 
+}
+variable "thename" {
+  type = string
+  default = "something" 
+}

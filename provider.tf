@@ -1,8 +1,8 @@
 terraform {
     cloud {
-    organization = "wastelands"
+    organization = var.org
       workspaces {
-      name = "azure-going"
+      name = var.thename
     }
   }
   required_providers {
