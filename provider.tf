@@ -1,7 +1,7 @@
 terraform {
     cloud {
-    organization = wastelands
-    token = "Yx9SVfsuJsz4sQ.atlasv1.z2mzbL31TBU1o3G2l0KWJRtWAOWvURzSTAg1603IM89GSVFgOZ1oeIUmTvRlJySyqjg"
+    organization = "wastelands"
+    token = "cETm34Dw1Q49JA.atlasv1.NxoAkiOZetFpPU1qxDDTqVQZcj0SDFJ4OUbq24doISEYxByxBaSG2znutNWtmKzDQ4Y"
     workspaces {
       name = "azure-going"
     }
