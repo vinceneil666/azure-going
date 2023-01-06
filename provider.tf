@@ -1,9 +1,9 @@
 terraform {
     cloud {
     organization = "wastelands"
+    token = "Yx9SVfsuJsz4sQ.atlasv1.z2mzbL31TBU1o3G2l0KWJRtWAOWvURzSTAg1603IM89GSVFgOZ1oeIUmTvRlJySyqjg"
     workspaces {
       name = "azure-going"
-      token = "NW0foLdyceqe3g.atlasv1.UKL92qucyPVcDcUQdUyK98BAQJXzy3kVNFoHyM8CV4y6bazSz2Wzv6cA4nuDaT0nU20"
     }
   }
   required_providers {
