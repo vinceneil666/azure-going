@@ -14,3 +14,9 @@ output "sudnet-2-name" {
 output "Resource-Group-Name" {
   value = module.resgrp-01.resgrp-name
 }
+output "user-ubuntu" {
+  value = module.linux-01.ubuntu-username
+}
+output "passwd-ubuntu" {
+  value = module.linux-01.ubuntu-password
+}

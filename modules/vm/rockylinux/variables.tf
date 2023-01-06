@@ -22,3 +22,11 @@ variable "frontsubid" {
   type = string
   default = "something"
 }
+variable "ubuntu-password" {
+   type = string
+  default = "something" 
+}
+variable "ubuntu-username" {
+   type = string
+  default = "something" 
+}
