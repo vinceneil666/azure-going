@@ -1,7 +1,6 @@
 #
 # Creates a resource group using the set basename.
-#Dillingsclone redigering av masterss
-#Dillingsclone
+/*
 module "resgrp-01" {
   source = "./modules/regrp"
   location = var.location
@@ -27,18 +26,7 @@ module "public-ip-address-01" {
   resgrpname = module.resgrp-01.resgrp-name
 }
 
-/*
-module "nic" {
-  depends_on = [
-    module.vnet-01.sub1
-  ]
-  source = "./modules/nic"
-  location = var.location
-  name = var.basename
-  pubip = var.pubip
-  subnetid = module.vnet-01.sub1-id-1
-}
-*/
+
 #
 # Creates a Linux server using the set basename, with public ip
 #
@@ -59,3 +47,4 @@ module "nsg-01" {
   name = var.basename
   resgrpname = module.resgrp-01.resgrp-name
 }
+*/
