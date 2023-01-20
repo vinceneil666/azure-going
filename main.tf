@@ -25,7 +25,7 @@ module "public-ip-address-01" {
   resgrpname = module.resgrp-01.resgrp-name
 }
 #
-# Creates a Linux server using the set basename, with public ip
+# Creates a Linux server using the set basename, with public ip.
 #
 module "linux-01"{
   source = "./modules/vm/rockylinux"
